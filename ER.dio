@@ -1,0 +1,163 @@
+<mxfile host="65bd71144e">
+    <diagram id="9FLPo9KnaYBnUHSvrETh" name="ページ1">
+        <mxGraphModel dx="769" dy="561" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontSize=10;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=none;" edge="1" parent="1" source="3" target="4">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="510" y="550" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="3" value="&amp;nbsp; usersテーブル&lt;br&gt;&lt;br&gt;&amp;nbsp; email (string型, NOT NULL, ユニーク制約)&lt;br&gt;&amp;nbsp; encrypted_password&amp;nbsp; (string型, NOT NULL)&lt;br&gt;&amp;nbsp; nickname (string型, NOT NULL)&lt;br&gt;&amp;nbsp;&amp;nbsp;&lt;span style=&quot;background-color: rgb(30 , 30 , 30) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace&quot;&gt;last_name&amp;nbsp;&lt;/span&gt;&lt;span&gt;(&lt;/span&gt;string&lt;span&gt;型,NOT NULL)&lt;/span&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&lt;span style=&quot;background-color: rgb(30 , 30 , 30) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace&quot;&gt;first_name&lt;/span&gt;&lt;span&gt;&amp;nbsp;(&lt;/span&gt;string&lt;span&gt;型, NOT NULL)&lt;/span&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&lt;span style=&quot;background-color: rgb(30 , 30 , 30) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace&quot;&gt;last_name_kana&amp;nbsp;&lt;/span&gt;&lt;span&gt;(&lt;/span&gt;string&lt;span&gt;型,NOT NULL)&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: rgb(30 , 30 , 30) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace&quot;&gt;&amp;nbsp;first_name_kana&amp;nbsp;&lt;/span&gt;&lt;span&gt;(&lt;/span&gt;string&lt;span&gt;型,NOT NULL)&lt;br&gt;&lt;/span&gt;&lt;span&gt;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: rgb(30 , 30 , 30) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace&quot;&gt;birth_date(1i) (datetime型,&lt;/span&gt;NOT NULL)&lt;br&gt;&amp;nbsp;&amp;nbsp;&lt;span style=&quot;background-color: rgb(30 , 30 , 30) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace&quot;&gt;birth_date(2i) (datetime型,&lt;/span&gt;NOT NULL)&lt;span style=&quot;background-color: rgb(30 , 30 , 30) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace&quot;&gt;&lt;br&gt;&lt;/span&gt;&amp;nbsp;&amp;nbsp;&lt;span style=&quot;background-color: rgb(30 , 30 , 30) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace&quot;&gt;birth_date(3i) (datetime型,&lt;/span&gt;NOT NULL)&lt;span style=&quot;background-color: rgb(30 , 30 , 30) ; color: rgb(212 , 212 , 212) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace&quot;&gt;&lt;br&gt;&lt;/span&gt;" style="whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="110" y="400" width="290" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="&amp;nbsp; itemsテーブル&lt;br&gt;&lt;br&gt;&amp;nbsp; name (string型, NOT NULL)&lt;br&gt;&amp;nbsp; info&amp;nbsp; (text型, NOT NULL)&lt;br&gt;&amp;nbsp; &lt;span style=&quot;background-color: rgb(30 , 30 , 30) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace&quot;&gt;category_id&amp;nbsp;&lt;/span&gt;&lt;span&gt;(string型, NOT NULL)&lt;/span&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&lt;span style=&quot;background-color: rgb(30 , 30 , 30) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace&quot;&gt;shipping_fee_status_id&amp;nbsp;&lt;/span&gt;(string型, NOT NULL)&lt;br&gt;&amp;nbsp;&amp;nbsp;&lt;span style=&quot;background-color: rgb(30 , 30 , 30) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace&quot;&gt;prefecture_id&amp;nbsp;&lt;/span&gt;&lt;span&gt;(string型, NOT NULL)&lt;/span&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&lt;span style=&quot;background-color: rgb(30 , 30 , 30) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace&quot;&gt;scheduled_delivery_id&amp;nbsp;&lt;/span&gt;&lt;span&gt;(string型, NOT NULL)&lt;/span&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&lt;span style=&quot;background-color: rgb(30 , 30 , 30) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace&quot;&gt;price&amp;nbsp;&lt;/span&gt;&lt;span&gt;(integer型, NOT NULL)&lt;/span&gt;" style="whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="550" y="400" width="300" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="&amp;nbsp; commentsテーブル&lt;br&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&lt;br&gt;&amp;nbsp; content (text型, NOT NULL)&lt;br&gt;&amp;nbsp; item (reference型, NOT NULL, 外部キー)&lt;br&gt;&amp;nbsp; user (reference型,NOT NULL, 外部キー)&lt;br&gt;&amp;nbsp;&amp;nbsp;&lt;br&gt;&amp;nbsp;&amp;nbsp;" style="whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="340" y="720" width="260" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="" style="endArrow=none;html=1;fontSize=10;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="3" target="4">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="450" y="640" as="sourcePoint"/>
+                        <mxPoint x="500" y="590" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="7" value="" style="endArrow=none;html=1;fontSize=10;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;rounded=0;" edge="1" parent="1" source="3" target="5">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="450" y="640" as="sourcePoint"/>
+                        <mxPoint x="500" y="590" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="255" y="790"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="8" value="" style="endArrow=none;html=1;rounded=0;fontSize=10;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="5" target="4">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="450" y="640" as="sourcePoint"/>
+                        <mxPoint x="500" y="590" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="700" y="790"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="9" value="" style="endArrow=none;html=1;rounded=0;fontSize=10;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="420" y="535" as="sourcePoint"/>
+                        <mxPoint x="420" y="480" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="420" y="505"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="10" value="" style="endArrow=none;html=1;rounded=0;fontSize=10;entryX=0;entryY=0.364;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.003;exitY=0.618;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="4" target="4">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="530" y="540" as="sourcePoint"/>
+                        <mxPoint x="540" y="480" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="520" y="510"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="11" value="" style="endArrow=none;html=1;rounded=0;fontSize=10;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="235" y="630" as="sourcePoint"/>
+                        <mxPoint x="275" y="630" as="targetPoint"/>
+                        <Array as="points"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="12" value="" style="endArrow=none;html=1;rounded=0;fontSize=10;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="680" y="630" as="sourcePoint"/>
+                        <mxPoint x="720" y="630" as="targetPoint"/>
+                        <Array as="points"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="13" value="" style="endArrow=none;html=1;rounded=0;fontSize=10;exitX=-0.008;exitY=0.643;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="340" y="810.02" as="sourcePoint"/>
+                        <mxPoint x="340" y="760" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="14" value="" style="endArrow=none;html=1;rounded=0;fontSize=10;exitX=-0.008;exitY=0.643;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="600" y="810.02" as="sourcePoint"/>
+                        <mxPoint x="600" y="760" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="640" y="790"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="18" value="" style="endArrow=none;html=1;rounded=0;fontSize=10;entryX=0;entryY=0.364;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.003;exitY=0.618;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="340.0000000000001" y="817.94" as="sourcePoint"/>
+                        <mxPoint x="339.1" y="762.0600000000001" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="309.1" y="791.98"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="21" value="&amp;nbsp; odersテーブル&lt;br&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&lt;span style=&quot;background-color: rgb(30 , 30 , 30) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace&quot;&gt;postal_code&lt;/span&gt;&lt;span&gt;&amp;nbsp;(string型, NOT NULL)&lt;/span&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&lt;span style=&quot;background-color: rgb(30 , 30 , 30) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace&quot;&gt;prefecture&lt;/span&gt;&lt;span&gt;&amp;nbsp; (integer型, NOT NULL)&lt;/span&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&lt;span style=&quot;background-color: rgb(30 , 30 , 30) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace&quot;&gt;city&lt;/span&gt;&lt;span&gt;&amp;nbsp;(string型, NOT NULL)&lt;/span&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&lt;span style=&quot;background-color: rgb(30 , 30 , 30) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace&quot;&gt;house_number&lt;/span&gt;&lt;span style=&quot;background-color: rgb(30 , 30 , 30) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span&gt;(&lt;/span&gt;&lt;span&gt;string&lt;/span&gt;&lt;span&gt;型,NOT NULL)&lt;/span&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&lt;span style=&quot;background-color: rgb(30 , 30 , 30) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace&quot;&gt;building_name&lt;/span&gt;&lt;span&gt;&amp;nbsp;(&lt;/span&gt;&lt;span&gt;string&lt;/span&gt;&lt;span&gt;型)&lt;/span&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&lt;span style=&quot;background-color: rgb(30 , 30 , 30) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace&quot;&gt;phone_number&lt;/span&gt;&lt;span style=&quot;background-color: rgb(30 , 30 , 30) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span&gt;(&lt;/span&gt;&lt;span&gt;string&lt;/span&gt;&lt;span&gt;型,NOT NULL)&lt;/span&gt;&lt;br&gt;&amp;nbsp; item (reference型, NOT NULL, 外部キー)&lt;br&gt;&amp;nbsp; user (reference型,NOT NULL, 外部キー)&lt;span style=&quot;background-color: rgb(30 , 30 , 30) ; color: rgb(212 , 212 , 212) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace&quot;&gt;&lt;br&gt;&lt;/span&gt;" style="whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="325" y="100" width="290" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="" style="endArrow=none;html=1;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="240" y="400" as="sourcePoint"/>
+                        <mxPoint x="240" y="200" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="25" value="" style="endArrow=none;html=1;entryX=0.003;entryY=0.455;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="21">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="240" y="200" as="sourcePoint"/>
+                        <mxPoint x="510" y="330" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="26" value="" style="endArrow=none;html=1;exitX=0.567;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="4">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="460" y="380" as="sourcePoint"/>
+                        <mxPoint x="720" y="200" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="27" value="" style="endArrow=none;html=1;entryX=1.003;entryY=0.455;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="21">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="720" y="200" as="sourcePoint"/>
+                        <mxPoint x="510" y="330" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="28" value="" style="endArrow=none;html=1;rounded=0;fontSize=10;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="640" y="225" as="sourcePoint"/>
+                        <mxPoint x="640" y="170" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="640" y="195"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="29" value="" style="endArrow=none;html=1;rounded=0;fontSize=10;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="300" y="225" as="sourcePoint"/>
+                        <mxPoint x="300" y="170" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="300" y="195"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="30" value="" style="endArrow=none;html=1;rounded=0;fontSize=10;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="220" y="370" as="sourcePoint"/>
+                        <mxPoint x="260" y="370" as="targetPoint"/>
+                        <Array as="points"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="31" value="" style="endArrow=none;html=1;rounded=0;fontSize=10;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="700" y="370" as="sourcePoint"/>
+                        <mxPoint x="740" y="370" as="targetPoint"/>
+                        <Array as="points"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
