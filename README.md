@@ -19,8 +19,11 @@
 
 ### Association
 
-* has_many :items
-* has_many :comments
+- has_many :items
+- has_many :comments
+- has_one :oder
+
+
 
 ## items table
 
@@ -41,6 +44,7 @@
 
 - belongs_to :user
 - has_many :comments
+- has_one :oder
 
 ## comments table
 
@@ -57,16 +61,21 @@
 
 
 
+## oders table
 
-## users table
-
-has_one :oder
-
+| Column                              | Type       | Options                        |
+|-------------------------------------|------------|--------------------------------|
+| item                                | references | null: false, foreign_key: true |
+| user                                | references | null: false, foreign_key: true |
 
 ### Association
 
+- belongs_to :user
+- belongs_to :item
+- has_one :addresses
 
-## oders table
+
+## addresses table
 
 | Column                              | Type       | Options                        |
 |-------------------------------------|------------|--------------------------------|
@@ -76,17 +85,8 @@ has_one :oder
 | house_number                        | string     | null: false                    |
 | building_name                       | string     |                                |
 | phone_number                        | string     | null: false                    |
-| item                                | references | null: false, foreign_key: true |
-| user                                | references | null: false, foreign_key: true |
+| oder                                | references | null: false, foreign_key: true |
 
 ### Association
 
-belongs_to :user
-belongs_to :item
-
-
-## items table
-
-### Association
-
-has_one :oder
+- belongs_to :oder
