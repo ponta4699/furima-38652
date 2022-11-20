@@ -6,14 +6,12 @@
 |--------------------|---------------------|---------------------------|
 | email              | string              | null: false, unique: true |
 | encrypted_password | string              | null: false               |
-| nickname           | string              | null: false, unique: true |
+| nickname           | string              | null: false               |
 | last_name          | string              | null: false               |
 | first_name         | string              | null: false               |
 | last_name_kana     | string              | null: false               |
 | first_name_kana    | string              | null: false               |
-| birth_date(1i)     | datetime            | null: false               |
-| birth_date(2i)     | datetime            | null: false               |
-| birth_date(3i)     | datetime            | null: false               |
+| birth_date         | date                | null: false               |
 
 
 
@@ -21,7 +19,7 @@
 
 - has_many :items
 - has_many :comments
-- has_one :oder
+- has_many :oders
 
 
 
@@ -31,12 +29,13 @@
 |-------------------------------------|------------|--------------------------------|
 | name                                | string     | null: false                    |
 | info                                | text       | null: false                    |
-| category_id                         | string     | null: false                    |
-| sales_status_id                     | string     | null: false                    |
-| shipping_fee_status_id              | string     | null: false                    |
-| prefecture_id                       | string     | null: false                    |
-| scheduled_delivery_id               | string     | null: false                    |
+| category_id                         | integer    | null: false                    |
+| sales_status_id                     | integer    | null: false                    |
+| shipping_fee_status_id              | integer    | null: false                    |
+| prefecture_id                       | integer    | null: false                    |
+| scheduled_delivery_id               | integer    | null: false                    |
 | price                               | integer    | null: false                    |
+| user                                | references | null: false, foreign_key: true |
 
 
 
@@ -45,6 +44,7 @@
 - belongs_to :user
 - has_many :comments
 - has_one :oder
+
 
 ## comments table
 
@@ -72,7 +72,7 @@
 
 - belongs_to :user
 - belongs_to :item
-- has_one :addresses
+- has_one :address
 
 
 ## addresses table
@@ -80,7 +80,7 @@
 | Column                              | Type       | Options                        |
 |-------------------------------------|------------|--------------------------------|
 | postal_code                         | string     | null: false                    |
-| prefecture                          | integer    | null: false                    |
+| prefecture_id                       | integer    | null: false                    |
 | city                                | string     | null: false                    |
 | house_number                        | string     | null: false                    |
 | building_name                       | string     |                                |
