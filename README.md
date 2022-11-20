@@ -19,7 +19,7 @@
 
 - has_many :items
 - has_many :comments
-- has_many :oders
+- has_many :purchases
 
 
 
@@ -43,7 +43,7 @@
 
 - belongs_to :user
 - has_many :comments
-- has_one :oder
+- has_one :purchase
 
 
 ## comments table
@@ -61,7 +61,7 @@
 
 
 
-## oders table
+## purchases table
 
 | Column                              | Type       | Options                        |
 |-------------------------------------|------------|--------------------------------|
@@ -89,4 +89,4 @@
 
 ### Association
 
-- belongs_to :oder
+- belongs_to :purchase
