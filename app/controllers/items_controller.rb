@@ -1,6 +1,12 @@
 class ItemsController < ApplicationController
-  before_action :basic_auth
+  before_action :authenticate_user!, except: [:index]
 
+  
+
+
+  def new
+    @item = Item.new
+  end
 
   private
 
@@ -10,5 +16,7 @@ class ItemsController < ApplicationController
   end
 
 
+
+  redirect_to action: :index
 
 end
