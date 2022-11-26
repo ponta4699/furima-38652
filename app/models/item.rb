@@ -17,7 +17,7 @@ class Item < ApplicationRecord
   validates :name, presence: true
   validates :info, presence: true
   validates :user, presence: true
-  validates :price, presence: true
+  
 
   with_options numericality: { other_than: 1, message: "を選択してください" } do
     validates :category_id
@@ -25,6 +25,10 @@ class Item < ApplicationRecord
     validates :shipping_fee_status_id
     validates :prefecture_id
     validates :scheduled_delivery_id
+  end
+
+  with_options presence: true do
+    validates :price, numericality: { only_integer: true, greater_than_or_equal_to: 300, less_than_or_equal_to: 9_999_999 }
   end
 
 
