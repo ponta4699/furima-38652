@@ -16,7 +16,7 @@ class Item < ApplicationRecord
   validates :image, presence: { message: "を選択してください" }
   validates :name, presence: true
   validates :info, presence: true
-  validates :user, presence: true
+  
   
 
   with_options numericality: { other_than: 1, message: "を選択してください" } do
