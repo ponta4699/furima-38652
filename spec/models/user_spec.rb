@@ -10,9 +10,9 @@ RSpec.describe User, type: :model do
       it 'ニックネームとメールアドレス、パスワードとパスワード(確認)、お名前とお名前カナが存在すれば登録できる' do
         expect(@user).to be_valid
       end
-      it 'パスワードが6文字以上の半角英数字混合であれば登録できる' do
-        @user.password = '1a1a1a'
-        @user.password_confirmation = '1a1a1a'
+      it 'パスワードが10文字以上の半角英数字混合であれば登録できる' do
+        @user.password = '1a1a1a1a1a'
+        @user.password_confirmation = '1a1a1a1a1a'
         expect(@user).to be_valid
       end
       it '名字が全角文字であれば登録できる' do
@@ -60,30 +60,30 @@ RSpec.describe User, type: :model do
         @user.valid?
         expect(@user.errors.full_messages).to include("Password can't be blank")
       end
-      it 'パスワードは、6文字以上での入力が必須であること' do
-        @user.password = '00000'
-        @user.password_confirmation = '00000'
+      it 'パスワードは、10文字以上での入力が必須であること' do
+        @user.password = '000000000'
+        @user.password_confirmation = '000000000'
         @user.valid?
-        expect(@user.errors.full_messages).to include('Password is too short (minimum is 6 characters)')
+        expect(@user.errors.full_messages).to include("Password is invalid")
       end
       it 'パスワードは、数字のみでは登録ができない' do
-        @user.password = '111111'
+        @user.password = '1111111111'
         @user.valid?
         expect(@user.errors.full_messages).to include("Password is invalid")
       end
       it 'パスワードは、英字のみでは登録ができない' do
-        @user.password = 'aaaaaa'
+        @user.password = 'aaaaaaaaaa'
         @user.valid?
         expect(@user.errors.full_messages).to include("Password is invalid")
       end
       it 'パスワードとパスワード(確認)は、値の一致が必須であること' do
-        @user.password = '123456'
-        @user.password_confirmation = '1234567'
+        @user.password = '1234567890'
+        @user.password_confirmation = '12345678901'
         @user.valid?
         expect(@user.errors.full_messages).to include("Password confirmation doesn't match Password")
       end
       it '全角文字を含むパスワードでは登録できない' do
-        @user.password = '１a1a1a'
+        @user.password = '１a1a1a1a1a'
         @user.valid?
         expect(@user.errors.full_messages).to include("Password is invalid")
       end
