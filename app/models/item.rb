@@ -17,7 +17,7 @@ class Item < ApplicationRecord
   validates :image, presence: { message: "Image can't be blank" }
   validates :name, presence: true
   validates :info, presence: true
-  validates :price, presence: true
+  
   
   
 
